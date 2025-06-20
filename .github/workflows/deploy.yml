@@ -33,3 +33,6 @@ jobs:
       
       - name: Build page
         run: npm run build
+
+      - name: Message
+        run: echo "Mensaje de prueba" >> $GITHUB_STEP_SUMMARY
