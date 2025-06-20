@@ -39,6 +39,6 @@ jobs:
       
       - name: Version release
         run: |
-          echo "### Version release" >> $GITHUB_STEP_SUMMARY
+          echo "# Version release" >> $GITHUB_STEP_SUMMARY
           echo "## Version" >> $GITHUB_STEP_SUMMARY
-          echo "**V1.0.0**" >> $GITHUB_STEP_SUMMARY
+          echo "Version released: **V1.0.0** on __staging__" >> $GITHUB_STEP_SUMMARY
