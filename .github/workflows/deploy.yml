@@ -1,6 +1,7 @@
 name: Deploy
+# Se puede definir a nivel de workflow o de job
 concurrency:
-  group: deploy-workflow__${{ github.ref }}
+  group: deploy-workflow__${{ github.ref }} # llave principal para definir workflow único
   cancel-in-progress: true
 on:
   push:
